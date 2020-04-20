@@ -2,7 +2,7 @@
 # 先构建好build镜像，自动化编译扩展
 # author duanxuqiang@ucse.net
 
-docker run -d -it --name php-builder ucse/build
+docker run -d -it --name php-builder registry.cn-beijing.aliyuncs.com/dxq_docker/php_build
 # Build redis
 # Download from pear may need proxy
 #docker exec -i php-builder pecl install -o -f redis <<<no
